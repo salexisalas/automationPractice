@@ -6,3 +6,6 @@ automationPractice/src/test/resources/drivers/chromedriver.exe
 automationPractice/src/test/java/stepDefinitions/SetUpClass.java
 automationPractice/.settings/org.eclipse.jdt.core.prefs
 automationPractice/.classpath
+automationPractice/.classpath
+automationPractice/.settings/org.eclipse.jdt.core.prefs
+automationPractice/src/test/java/stepDefinitions/SetUpClass.java
