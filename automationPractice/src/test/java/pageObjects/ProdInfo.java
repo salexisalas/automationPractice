@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ProdInfo {
-	public int c;
 	
 	public ProdInfo(WebDriver driver) {
 		  PageFactory.initElements(driver, this);
