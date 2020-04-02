@@ -3,6 +3,7 @@
   <reporter-output>
   </reporter-output>
   <suite name="Default suite" duration-ms="40497" started-at="2020-04-01T21:39:50 CST" finished-at="2020-04-01T21:40:31 CST">
+  <suite name="Default suite" duration-ms="21864" started-at="2020-04-01T21:19:23 CST" finished-at="2020-04-01T21:19:45 CST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
@@ -19,11 +20,23 @@
             <param index="0">
               <value>
                 <![CDATA["User trying to checkout without logging in previously the page"]]>
+    <test name="Default test" duration-ms="21864" started-at="2020-04-01T21:19:23 CST" finished-at="2020-04-01T21:19:45 CST">
+      <class name="testRunners.FirstRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="setUpClass" is-config="true" duration-ms="825" started-at="2020-04-01T21:19:24 CST" finished-at="2020-04-01T21:19:24 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="runScenario" duration-ms="20783" started-at="2020-04-01T21:19:25 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-01T21:19:45 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User fills completely the contact us form and sends is"]]>
               </value>
             </param>
             <param index="1">
               <value>
                 <![CDATA["Shopping cart functionalities."]]>
+                <![CDATA["This is the contact us functionality"]]>
               </value>
             </param>
           </params>
@@ -31,6 +44,7 @@
           </reporter-output>
         </test-method> <!-- runScenario -->
         <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-04-01T21:40:31 CST" finished-at="2020-04-01T21:40:31 CST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="tearDownClass" is-config="true" duration-ms="14" started-at="2020-04-01T21:19:45 CST" finished-at="2020-04-01T21:19:45 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
