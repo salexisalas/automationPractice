@@ -10,6 +10,9 @@ public class LogInPage {
 	public LogInPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	
+	public String createEmail = "";
+	
 	@FindBy(id = "email")
 	WebElement emaillbl;
 	
@@ -39,6 +42,12 @@ public class LogInPage {
 //	public void clickSubmit() {
 //		submitBtn.click();
 //	}
+	
+	public void createAccount(String email) {
+		emailCreatelbl.sendKeys(email);
+		createEmail = email;
+		this.createBtn.click();
+	}
 
 }
 
