@@ -22,6 +22,24 @@ public class ThenTest {
 	
 	WebDriver driver = WhenTest.driver;
 	
+	@Then("User clicks on send button")
+	public void user_clicks_on_send_button() {
+		pi = new ProdInfo(driver);
+		pi.sendFriendemail();
+		WebElement lblAlert = driver.findElement(By.xpath("//*[@id=\"product\"]/div[2]/div/div/div/p[1]"));
+		Assert.assertTrue(lblAlert.getText().equals("Your e-mail has been sent successfully"));
+		driver.quit();
+	}
+	
+	@Then("User clicks on send button with fields in blank")
+	public void user_clicks_on_send_button_with_fields_in_blank() {
+		pi = new ProdInfo(driver);
+		pi.sendFriendemail();
+		WebElement lblAlert = driver.findElement(By.id("send_friend_form_error"));
+		Assert.assertTrue(lblAlert.getText().equals("You did not fill required fields"));
+		driver.quit();
+	}	
+	
 	@Then("User should recieve an order confirmation")
 	public void user_should_recieve_an_order_confirmation() {
 		sc = new ShoppingCartPage(driver);
