@@ -10,7 +10,6 @@ import pageObjects.ProdInfo;
 import pageObjects.ShoppingCartPage;
 
 public class WhenTest {
-	public static WebDriver driver = SetUpClass.driver;
 	public static WebDriver driver = GivenTest.driver;
 	
 	HomePage hp = new HomePage(driver);

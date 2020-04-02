@@ -7,7 +7,8 @@ import pageObjects.ContactUsPage;
 
 public class GivenTest {
 	public static WebDriver driver = SetUpClass.driver;
-
+	ContactUsPage cu;
+	
 	@Given("User is on the Home Page")
 	public void user_is_on_the_Home_Page() {
 		driver.get("http://automationpractice.com/index.php");
@@ -15,8 +16,7 @@ public class GivenTest {
 	}
 
 
-	public static WebDriver driver = SetUpClass.driver;
-	ContactUsPage cu;
+
 	@Given("User is on ContactUs page")
 	public void user_is_on_ContactUs_page() {
 	    // Write code here that turns the phrase above into concrete actions
