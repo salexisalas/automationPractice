@@ -44,7 +44,7 @@ public class ContactUsPage {
 		headingDropdown.selectByIndex(randomSubject);
 		emailField.sendKeys(randomEmail);
 		rDropdown.sendKeys(Integer.toString(randomReference));
-		fileUpload.sendKeys("C:/Users/test.admin/Documents/GitHub/automationPractice/automationPractice/src/test/resources/textFiles/attachedFile.txt");
+		fileUpload.sendKeys("C:/Users/Academia/Documents/GitHub/automationPractice/automationPractice/src/test/resources/textFiles/attachedFile.txt");
 		messageTextBox.sendKeys("This is my message");
 	}
 

@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -22,22 +21,16 @@ public class ThenTest {
 	
 	WebDriver driver = WhenTest.driver;
 	
-	@Then("User clicks on send button")
+	@Then("User should see email sent confirmation")
 	public void user_clicks_on_send_button() {
-		pi = new ProdInfo(driver);
-		pi.sendFriendemail();
 		WebElement lblAlert = driver.findElement(By.xpath("//*[@id=\"product\"]/div[2]/div/div/div/p[1]"));
 		Assert.assertTrue(lblAlert.getText().equals("Your e-mail has been sent successfully"));
-		driver.quit();
 	}
 	
-	@Then("User clicks on send button with fields in blank")
-	public void user_clicks_on_send_button_with_fields_in_blank() {
-		pi = new ProdInfo(driver);
-		pi.sendFriendemail();
+	@Then("Page should ask user to fill all required fields")
+	public void page_reguests_fields() {
 		WebElement lblAlert = driver.findElement(By.id("send_friend_form_error"));
 		Assert.assertTrue(lblAlert.getText().equals("You did not fill required fields"));
-		driver.quit();
 	}	
 	
 	@Then("User should recieve an order confirmation")
@@ -52,14 +45,12 @@ public class ThenTest {
 	}
 		@Then("User should see confirmation message {string}")
 	public void user_should_see_confirmation_message(String message) {
-	    // Write code here that turns the phrase above into concrete actions
 		 WebElement cMessage = driver.findElement(By.xpath("//*[@id=\"center_column\"]/p"));
 		 Assert.assertTrue(cMessage.getText().equals(message));	
 	}
 	
 	@Then("User should see error message {string}")
 	public void user_should_see_error_message(String message) {
-	    // Write code here that turns the phrase above into concrete actions
 		 WebElement cMessage = driver.findElement(By.xpath("//*[@id=\"center_column\"]/div/ol/li"));
 		 Assert.assertTrue(cMessage.getText().equals(message));	
 	}

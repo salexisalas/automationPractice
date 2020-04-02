@@ -1,7 +1,11 @@
 package stepDefinitions;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.ContactUsPage;
 import pageObjects.HomePage;
@@ -15,14 +19,12 @@ public class WhenTest {
 	HomePage hp = new HomePage(driver);
 	LogInPage lg = new LogInPage(driver);
 	ShoppingCartPage sc = new ShoppingCartPage(driver);
-	ProdInfo pi = new ProdInfo(driver);;
+	ProdInfo pi = new ProdInfo(driver);
+	ContactUsPage cu = new ContactUsPage(driver);
 	
-	public static WebDriver driver = GivenTest.driver;
 	@When("User enters a name of a friend {string} and a email of a friend {string}")
-	public void user_enters_a_name_of_a_friend(String name, String email) {
-		 
+	public void user_enters_a_name_of_a_friend(String name, String email) { 
 		pi.fillFields(name, email);
-		
 	}
 	
 
@@ -56,18 +58,27 @@ public class WhenTest {
 
 
 
-	ContactUsPage cu = new ContactUsPage(driver);;
+
 	@When("User fills the entire form")
 	public void user_fills_the_entire_form() {
-	    // Write code here that turns the phrase above into concrete actions
-	    cu = new ContactUsPage(driver);
 	    cu.fillForm();
 	}
 
 
 	@When("User clicks on send button")
 	public void user_clicks_on_send_button() {
-	    // Write code here that turns the phrase above into concrete actions
 	    cu.submitMessage();
 	}
+	
+	@When("User clicks on send to friend button")
+	public void user_clicks_send_friend() {
+		pi = new ProdInfo(driver);
+		pi.sendFriendemail();
+	}
+	
+	@When("User clicks on send button with fields in blank")
+	public void user_clicks_on_send_button_with_fields_in_blank() {
+		pi = new ProdInfo(driver);
+		pi.sendFriendemail();
+	}	
 }
