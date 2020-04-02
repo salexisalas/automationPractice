@@ -15,6 +15,16 @@ public class WhenTest {
 	HomePage hp = new HomePage(driver);
 	LogInPage lg = new LogInPage(driver);
 	ShoppingCartPage sc = new ShoppingCartPage(driver);
+	ProdInfo pi = new ProdInfo(driver);;
+	
+	public static WebDriver driver = GivenTest.driver;
+	@When("User enters a name of a friend {string} and a email of a friend {string}")
+	public void user_enters_a_name_of_a_friend(String name, String email) {
+		 
+		pi.fillFields(name, email);
+		
+	}
+	
 
 	@When("User adds an item to the shopping cart")
 	public void user_adds_an_item_to_the_shopping_cart() {
