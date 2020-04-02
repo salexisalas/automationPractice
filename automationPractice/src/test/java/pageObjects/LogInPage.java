@@ -48,6 +48,13 @@ public class LogInPage {
 		createEmail = email;
 		this.createBtn.click();
 	}
+	public void signIn(String email,String pass) {
+		emaillbl.sendKeys(email);
+		passwdlbl.sendKeys(pass);
+		submitBtn.click();
+	}
+	
+
 
 }
 

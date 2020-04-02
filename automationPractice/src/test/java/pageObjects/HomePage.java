@@ -12,6 +12,9 @@ public class HomePage {
 	@FindBy(className = "product_img_link")
 	WebElement productBtn;
 	
+	@FindBy(xpath = "//*[@id=\"homefeatured\"]/li[1]/div/div[2]/div[2]/a[2]")
+	WebElement nameProd;
+	
 	@FindBy(className = "quick-view")
 	WebElement viewBtn;
 	
@@ -23,19 +26,23 @@ public class HomePage {
 	
 
 	
-//	public void clickProduct(WebDriver driver) {
-//		Actions action = new Actions(driver);
-//		action.moveToElement(productBtn).perform();
-//	}
-//	
-//	public void clickAdd() {
-//		addBtn.click();
-//	}
-//	
-//	public void clickProceed() {
-//		proceedBtn.click();
-//
-//	}
+	public void clickProduct(WebDriver driver) {
+		Actions action = new Actions(driver);
+		action.moveToElement(productBtn).perform();
+	}
+	
+	public void productClick() {
+	nameProd.click();
+	}
+	
+	public void clickAdd() {
+		addBtn.click();
+	}
+	
+	public void clickProceed() {
+		proceedBtn.click();
+
+	}
 	
 	
 }

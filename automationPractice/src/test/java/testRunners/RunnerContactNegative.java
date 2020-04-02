@@ -8,9 +8,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/featureFiles",
 		glue = {"stepDefinitions"},
-		tags = {"@BlankRequiredField"}
+		tags = {"@CONT02"}
 		
 		)
-public class FirstRunner extends AbstractTestNGCucumberTests {
+public class RunnerContactNegative extends AbstractTestNGCucumberTests {
 
 }

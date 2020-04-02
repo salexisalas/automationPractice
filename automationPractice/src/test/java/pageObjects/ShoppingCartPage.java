@@ -1,10 +1,14 @@
 package pageObjects;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class ShoppingCartPage {
-
+	public ShoppingCartPage(WebDriver driver) {
+		PageFactory.initElements(driver, this);
+	}
 	
 	@FindBy(linkText = "Proceed to checkout")
 	WebElement proceedBtn;
@@ -24,21 +28,37 @@ public class ShoppingCartPage {
 	@FindBy(className = "page-heading")
 	WebElement confirmationTitle;
 	
+	@FindBy(className = "fancybox-error")
+	WebElement agreeError;
 	
-//	public void clickProceed() {
-//		proceedBtn.click();
-//		proceedBtn2.click();
-//		agreeCheckBox.click();
-//		proceedBtn3.click();
-//		bankWireBtn.click();
-//	}
-//	
-//	public void clickConfirm() {
-//		proceedBtn2.click();	
-//	}
-//	
-//	public String getConfirmationTitle() {
-//		System.out.println(confirmationTitle.getText());
-//		return confirmationTitle.getText();
-//	}
+	public void clickProceed() {
+		proceedBtn.click();
+
+	}
+	
+	public void proceedNAgree() {
+		proceedBtn2.click();
+		agreeCheckBox.click();
+		proceedBtn3.click();
+	}
+	
+	public void proceedNDontAgree() {
+		proceedBtn2.click();
+		proceedBtn3.click();
+	}
+
+	
+	public void completeCheckout() {
+		proceedNAgree();
+		bankWireBtn.click();
+		proceedBtn2.click();
+	}
+	
+	public String getConfirmationTitle() {
+		System.out.println(confirmationTitle.getText());
+		return confirmationTitle.getText();
+	}
+	public String getAgreeError() {
+		return agreeError.getText();
+	}
 }
