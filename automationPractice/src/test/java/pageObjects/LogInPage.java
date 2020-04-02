@@ -28,17 +28,13 @@ public class LogInPage {
 	@FindBy(id = "SubmitCreate")
 	WebElement createBtn;
 	
-//	public void sendEmail(String email) {
-//		emaillbl.sendKeys(email);
-//	}
-//	
-//	public void sendPass(String pass) {
-//		passwdlbl.sendKeys(pass);
-//	}
-//	
-//	public void clickSubmit() {
-//		submitBtn.click();
-//	}
+	public void signIn(String email,String pass) {
+		emaillbl.sendKeys(email);
+		passwdlbl.sendKeys(pass);
+		submitBtn.click();
+	}
+	
+
 
 }
 

@@ -23,19 +23,19 @@ public class HomePage {
 	
 
 	
-//	public void clickProduct(WebDriver driver) {
-//		Actions action = new Actions(driver);
-//		action.moveToElement(productBtn).perform();
-//	}
-//	
-//	public void clickAdd() {
-//		addBtn.click();
-//	}
-//	
-//	public void clickProceed() {
-//		proceedBtn.click();
-//
-//	}
+	public void clickProduct(WebDriver driver) {
+		Actions action = new Actions(driver);
+		action.moveToElement(productBtn).perform();
+	}
+	
+	public void clickAdd() {
+		addBtn.click();
+	}
+	
+	public void clickProceed() {
+		proceedBtn.click();
+
+	}
 	
 	
 }

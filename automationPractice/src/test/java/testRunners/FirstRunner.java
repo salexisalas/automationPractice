@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/featureFiles",
 		glue = {"stepDefinitions"},
-		tags = {"@BuyProduct"}
+		tags = {""}
 		
 		)
 public class FirstRunner extends AbstractTestNGCucumberTests {

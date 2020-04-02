@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="40497" started-at="2020-04-01T21:39:50 CST" finished-at="2020-04-01T21:40:31 CST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="40497" started-at="2020-04-01T21:39:50 CST" finished-at="2020-04-01T21:40:31 CST">
+      <class name="testRunners.FirstRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="setUpClass" is-config="true" duration-ms="268" started-at="2020-04-01T21:39:50 CST" finished-at="2020-04-01T21:39:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="runScenario" duration-ms="40188" started-at="2020-04-01T21:39:51 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-01T21:40:31 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User trying to checkout without logging in previously the page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Shopping cart functionalities."]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-04-01T21:40:31 CST" finished-at="2020-04-01T21:40:31 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.FirstRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
