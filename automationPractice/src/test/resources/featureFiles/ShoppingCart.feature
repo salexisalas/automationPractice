@@ -4,7 +4,7 @@ Feature: Shopping cart functionalities.
   As a user I should be able to add items to the shopping cart
   So I can buy Products
   
-  @ORD0000
+  @ORD7
 	Scenario: User does not agree with Terms of service during the checkout
 		Given User is on the Home Page
     When User adds an item to the shopping cart

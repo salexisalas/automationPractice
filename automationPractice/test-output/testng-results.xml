@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22038" started-at="2020-04-01T23:01:56 CST" finished-at="2020-04-01T23:02:18 CST">
+  <suite name="Default suite" duration-ms="25592" started-at="2020-04-02T00:10:49 CST" finished-at="2020-04-02T00:11:15 CST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.RunnerContactNegative@5a1c0542]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="22038" started-at="2020-04-01T23:01:56 CST" finished-at="2020-04-01T23:02:18 CST">
-      <class name="testRunners.FirstRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="setUpClass" is-config="true" duration-ms="344" started-at="2020-04-01T23:01:56 CST" finished-at="2020-04-01T23:01:57 CST">
+    <test name="Default test" duration-ms="25592" started-at="2020-04-02T00:10:49 CST" finished-at="2020-04-02T00:11:15 CST">
+      <class name="testRunners.RunnerContactNegative">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.RunnerContactNegative@5a1c0542]" name="setUpClass" is-config="true" duration-ms="381" started-at="2020-04-02T00:10:49 CST" finished-at="2020-04-02T00:10:50 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="runScenario" duration-ms="21640" started-at="2020-04-01T23:01:57 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-01T23:02:18 CST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.RunnerContactNegative@5a1c0542]" name="runScenario" duration-ms="25132" started-at="2020-04-02T00:10:50 CST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-04-02T00:11:15 CST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User leaves blank the form"]]>
+                <![CDATA["User tries to send a blank contact us form"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Product Info Page"]]>
+                <![CDATA["This is the contact us functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.FirstRunner@5a1c0542]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2020-04-01T23:02:18 CST" finished-at="2020-04-01T23:02:18 CST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.RunnerContactNegative@5a1c0542]" name="tearDownClass" is-config="true" duration-ms="6" started-at="2020-04-02T00:11:15 CST" finished-at="2020-04-02T00:11:15 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunners.FirstRunner -->
+      </class> <!-- testRunners.RunnerContactNegative -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
