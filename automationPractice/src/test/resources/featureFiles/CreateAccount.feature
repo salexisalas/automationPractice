@@ -4,10 +4,10 @@ Feature: Create New Account
 
   @ValidCredentials
   Scenario: User should be able to create an account entering required fields
-    Given User enters valid email "fermin_ride@hotmail.com" on login page and clicks on create account button
+    Given User enters valid email "fermi_rie@hotmail.com" on login page and clicks on create account button
     When User enters firstName "Fermin"
     And User enters lastName "Mireles"
-    And Email is filled with previous email "fermin_ride@hotmail.com" from login page
+    And Email is filled with previous email "fermi_rie@hotmail.com" from login page
     And User enters a password "mypassw0rd"
     And nameAddress "Fermin" is filled with the name entered in previous textbox
     And lastNameAddress "Mireles" in addresses is filled with the last name entered in previous textbox
@@ -23,12 +23,12 @@ Feature: Create New Account
     
     @BlankRequiredField
   Scenario: User should not be able to create an account if required fields are empty
-    Given User enters valid email "fermi_ride@hotmail.com" on login page and clicks on create account button
+    Given User enters valid email "fermi_die@hotmail.com" on login page and clicks on create account button
     When User enters firstName ""
     And User enters lastName "Mireles"
-    And Email is filled with previous email "fermin_ride@hotmail.com" from login page
+    And Email is filled with previous email "fermin_die@hotmail.com" from login page
     And User enters a password "mypassw0rd"
-    And nameAddress "Fermin" is filled with the name entered in previous textbox
+    And nameAddress "" is filled with the name entered in previous textbox
     And lastNameAddress "Mireles" in addresses is filled with the last name entered in previous textbox
     And User enters address "2860 Landmark dr."
     And User enters city "Marietta"
