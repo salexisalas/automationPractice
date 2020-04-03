@@ -11,7 +11,8 @@ public class CreateAccount {
 		PageFactory.initElements(driver, this);
 	}
 
-	// Personal Information
+	// Mapping of elements
+	
 	@FindBy(xpath = "//*[@id=\"id_gender1\"]")
 	WebElement radioTitleMr;
 
@@ -87,6 +88,8 @@ public class CreateAccount {
 
 	@FindBy(xpath = "//*[@id=\"submitAccount\"]")
 	WebElement btnRegister;
+	
+	//Method declaration
 
 	public void getTitle() {
 

@@ -9,7 +9,12 @@ import pageObjects.LogInPage;
 import pageObjects.ProdInfo;
 
 public class GivenTest {
+	
+	//Driver call
+	
 	public static WebDriver driver = SetUpClass.driver;
+	
+	//Page object calls
 	ContactUsPage cu;
 	HomePage hp = new HomePage(driver);
 	ProdInfo pi = new ProdInfo(driver);

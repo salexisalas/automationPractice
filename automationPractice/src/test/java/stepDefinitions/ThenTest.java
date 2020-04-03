@@ -12,13 +12,22 @@ import pageObjects.ProdInfo;
 import pageObjects.ShoppingCartPage;
 
 public class ThenTest {
+	
+	//Web driver call
+	
+	WebDriver driver = WhenTest.driver;
+	
+	//Page objects call
+	
 	ContactUsPage cu;
 	HomePage hp;
 	LogInPage lg;
 	ProdInfo pi;
 	ShoppingCartPage sc;
 	
-	WebDriver driver = WhenTest.driver;
+
+	
+
 
 	WebElement navBar;
 	

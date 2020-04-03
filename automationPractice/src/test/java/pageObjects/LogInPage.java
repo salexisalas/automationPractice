@@ -13,6 +13,8 @@ public class LogInPage {
 	
 	public String createEmail = "";
 	
+	//Mapping of Elemets
+	
 	@FindBy(id = "email")
 	WebElement emaillbl;
 	
@@ -31,17 +33,7 @@ public class LogInPage {
 	@FindBy(id = "SubmitCreate")
 	WebElement createBtn;
 	
-//	public void sendEmail(String email) {
-//		emaillbl.sendKeys(email);
-//	}
-//	
-//	public void sendPass(String pass) {
-//		passwdlbl.sendKeys(pass);
-//	}
-//	
-//	public void clickSubmit() {
-//		submitBtn.click();
-//	}
+	//Methods declaration
 	
 	public void createAccount(String email) {
 		emailCreatelbl.sendKeys(email);

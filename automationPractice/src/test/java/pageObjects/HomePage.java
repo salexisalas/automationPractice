@@ -9,6 +9,9 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	
+	//Mapping of elements
+	
 	@FindBy(className = "product_img_link")
 	WebElement productBtn;
 	
@@ -24,7 +27,7 @@ public class HomePage {
 	@FindBy(linkText = "Proceed to checkout")
 	WebElement proceedBtn;
 	
-
+	//Methods declaration
 	
 	public void clickProduct(WebDriver driver) {
 		Actions action = new Actions(driver);

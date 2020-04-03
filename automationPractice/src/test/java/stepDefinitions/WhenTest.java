@@ -20,7 +20,12 @@ import pageObjects.CreateAccount;
 import pageObjects.LogInPage;
 
 public class WhenTest {
+	
+	//Driver call
+	
 	public static WebDriver driver = GivenTest.driver;
+	
+	//Page objects call
 	
 	HomePage hp = new HomePage(driver);
 	LogInPage lg = new LogInPage(driver);

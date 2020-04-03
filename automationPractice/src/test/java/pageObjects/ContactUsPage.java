@@ -18,6 +18,8 @@ public class ContactUsPage {
 	int randomReference = rand.nextInt(100000);
 	String randomEmail = "test" + Integer.toString(rand.nextInt(100)) + "@gmail.com";
 	
+	//Mapping of elements
+	
 	@FindBy(id= "id_contact")
 	WebElement hDropdown;
 	
@@ -38,6 +40,8 @@ public class ContactUsPage {
 	
 	@FindBy(id="submitMessage")
 	WebElement submitMessageBtn;
+	
+	//Methods declaration
 	
 	public void fillForm() {
 		Select headingDropdown = new Select(hDropdown);

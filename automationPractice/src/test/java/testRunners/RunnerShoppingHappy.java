@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/resources/featureFiles",
 		glue = {"stepDefinitions"},
-		tags = {"@BlankRequiredField"}
+		tags = {"@ORD1"}
 		
 		)
 public class RunnerShoppingHappy extends AbstractTestNGCucumberTests {

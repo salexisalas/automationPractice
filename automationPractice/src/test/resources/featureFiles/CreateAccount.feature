@@ -2,12 +2,13 @@
 Feature: Create New Account
   As a new user I should be able to create a new account
 
-  @ValidCredentials
+##A new email must be invented on each run
+  @LOG03
   Scenario: User should be able to create an account entering required fields
-    Given User enters valid email "fermi_rie@hotmail.com" on login page and clicks on create account button
+    Given User enters valid email "fermiaaa_ri1e@hotmail.com" on login page and clicks on create account button 
     When User enters firstName "Fermin"
     And User enters lastName "Mireles"
-    And Email is filled with previous email "fermi_rie@hotmail.com" from login page
+    And Email is filled with previous email "fermiaaa_ri1e@hotmail.com" from login page
     And User enters a password "mypassw0rd"
     And nameAddress "Fermin" is filled with the name entered in previous textbox
     And lastNameAddress "Mireles" in addresses is filled with the last name entered in previous textbox

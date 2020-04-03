@@ -12,6 +12,8 @@ public class ProdInfo {
 	public ProdInfo(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
+	
+	//Mapping of Elements
 
 	@FindBy(id = "send_friend_button")
 	WebElement friendbtn;
@@ -54,6 +56,8 @@ public class ProdInfo {
 
 	@FindBy(xpath = "//*[@id=\"criterions_list\"]/li/div[1]/div[6]/a")
 	WebElement fivestars;
+	
+	//Methods declaration
 
 	public void friendemailbtn() {
 		friendbtn.click();

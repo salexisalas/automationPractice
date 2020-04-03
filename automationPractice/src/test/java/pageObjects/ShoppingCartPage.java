@@ -10,6 +10,8 @@ public class ShoppingCartPage {
 		PageFactory.initElements(driver, this);
 	}
 	
+	//Mapping of Elements
+	
 	@FindBy(linkText = "Proceed to checkout")
 	WebElement proceedBtn;
 	
@@ -30,6 +32,8 @@ public class ShoppingCartPage {
 	
 	@FindBy(className = "fancybox-error")
 	WebElement agreeError;
+	
+	//Methods declaration
 	
 	public void clickProceed() {
 		proceedBtn.click();
